@@ -4,7 +4,6 @@ Aplicativo de bolão para amigos e colaboradores.
 
 ## Participantes
 - Victor Benicio
-- Reginaldo
 
 ## Regras
 - Acertou vencedor: 3 pontos
