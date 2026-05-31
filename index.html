@@ -5,7 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h1>🏆 BOLÃO COPA R TIRADENTES 2026</h1>
 <p>⚽ A resenha oficial da turma ⚽</p>
+<div class="card">
+<h2>⏳ Contagem Regressiva para a Copa</h2>
 
+<h1 id="contador">Carregando...</h1>
+
+</div>
 <style>
 body{
     font-family: Arial, sans-serif;
@@ -57,7 +62,21 @@ th{
 }
 </style>
 </head>
+<script>
+const dataCopa = new Date("2026-06-11");
 
+function atualizarContador() {
+    const hoje = new Date();
+    const diferenca = dataCopa - hoje;
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+    document.getElementById("contador").innerHTML =
+        dias + " dias";
+}
+
+atualizarContador();
+</script>
 <body>
 
 <header>
